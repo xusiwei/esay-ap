@@ -9,7 +9,7 @@ sudo killall dnsmasq
 # setup wlan0 IP address
 sudo ifconfig wlan0 192.16.1.1
 
-# turn on ipv4 forward, write to /etc/sysctl.conf as a start-up argument
+# turn on ipv4 forward, umcomment net.ipv4.ip_forward=1 in /etc/sysctl.conf as a boot-up argument
 sudo echo '1'>/proc/sys/net/ipv4/ip_forward
 
 # backup DNS settings
