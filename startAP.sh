@@ -19,7 +19,7 @@ sudo echo '1'>/proc/sys/net/ipv4/ip_forward
 sudo /etc/init.d/dnsmasq restart
 
 # restore DNS settings(because dnsmasq service set nameserver as localhost).
-sudo cp /etc/dnsmasq.resolv.conf /etc/resolv.conf
+#sudo cp /etc/dnsmasq.resolv.conf /etc/resolv.conf
 
 # start access point
 sudo hostapd -B /etc/hostapd.conf
